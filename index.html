@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html>
-<p>it me amier</p>
+<head>
+    <title>amiercodes</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #008000;
+            overflow: hidden;
+        }
 
-  
+        /* monitor thing? idk*/
+        .monitor {
+            width: 80%;
+            height: 80%;
+            margin: 5% auto; 
+            background-color: #c0c0c0; 
+            border: 4px solid #000;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* window */
+        .window {
+            width: 300px;
+            height: 200px;
+            background-color: #ece9d8;
+            border: 2px solid #000;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        /* title of window  */
+        .window-title {
+            background-color: #000080;
+            color: white;
+            padding: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <!-- container of monitor -->
+    <div class="monitor">
+        <!-- example window -->
+        <div class="window">
+            <div class="window-title">About Me.exe</div>
+            <div class="window-content">
+                <p>blah blah blah blah blah</p>
+            </div>
+        </div>
+
+        <!-- add more windows later -->
+    </div>
+</body>
 </html>
