@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Running...</title>
+    <style>
+        body {
+            background-color: #008000;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-family: "MS Sans Serif", Arial, sans-serif;
+        }
+        .monitor {
+            width: 80%;
+            height: 80%;
+            margin: 5% auto;
+            background-color: #c0c0c0;
+            border: 4px solid #000;
+            position: relative;
+        }
+        /* da window :3 */
+        .window {
+            width: 300px;
+            height: 200px;
+            background: #ece9d8;
+            border: 3px solid #000;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            display: none; 
+        }
+        .window:target {  
+            display: block;
+        }
+        .window-title {
+            background: #000080;
+            color: white;
+            padding: 4px;
+            font-size: 12px;
+        }
+        .close-btn {
+            float: right;
+            cursor: pointer;
+        }
+        /* icons i guess??? idk how i'm gonna do this chat */
+        .icon {
+            position: absolute;
+            color: black;
+            text-align: center;
+            width: 80px;
+            margin: 20px;
+        }
+        .icon img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="monitor">
+        <!-- desktop icons -->
+        <a href="#about" class="icon" style="top: 20px; left: 20px;">
+            <img src="assets/images/about-icon.png" alt="About"><br>
+            About Me
+        </a>
+        <a href="#games" class="icon" style="top: 100px; left: 20px;">
+            <img src="assets/images/games-icon.png" alt="Games"><br>
+            My Projects
+        </a>
+
+        <!-- windows (open when icon clicked) -->
+        <div id="about" class="window">
+            <div class="window-title">
+                About Me.exe 
+                <a href="#" class="close-btn">X</a> <!-- closes window -->
+            </div>
+            <div class="window-content">
+                <p>blah blahblah blah blah</p>
+            </div>
+        </div>
+
+        <div id="games" class="window">
+            <div class="window-title">
+                My Projects.exe 
+                <a href="#" class="close-btn">X</a>
+            </div>
+            <div class="window-content">
+                <ul>
+                    <li><a href="#">poop</a></li>
+                    <li><a href="#">poop</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
