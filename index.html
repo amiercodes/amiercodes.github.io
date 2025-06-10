@@ -22,6 +22,24 @@
         .buttons {
             margin-top: 20px;
         }
+        a.button {
+            background: #c0c0c0;
+            border-top: 2px solid #dfdfdf;   
+            border-left: 2px solid #dfdfdf;
+            border-right: 2px solid #808080; 
+            border-bottom: 2px solid #808080;
+            padding: 5px 15px;
+            margin: 0 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        a.button:active {  /* when clicked */
+            border-top: 2px solid #808080;   
+            border-left: 2px solid #808080;
+            border-right: 2px solid #dfdfdf;
+            border-bottom: 2px solid #dfdfdf;
+            transform: translate(1px, 1px);    /* for it to be slightly pushed down? */
+}
         a {
             text-decoration: none;
             color: #000;
